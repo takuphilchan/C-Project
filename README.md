@@ -1,2 +1,2 @@
-# C-Project
+# CPP-Project
 C++ for deep learning
