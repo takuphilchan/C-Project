@@ -128,11 +128,6 @@ This guide will walk you through the process of setting up a development environ
   Ensure that `gdb` and `g++` are correctly set up in the MSYS2 environment. Check the paths in your `launch.json` file to make sure everything points to the right executables.
 
 ---
-
-## Conclusion
-
-By following this guide, you should now have a complete development environment set up for C++ with OpenCV and Qt using MSYS2 and Visual Studio Code. You can now start developing your projects with powerful libraries for computer vision (OpenCV) and GUI development (Qt).
-
 For additional resources, check out the following documentation:
 
 - [OpenCV Documentation](https://docs.opencv.org/)
@@ -140,5 +135,4 @@ For additional resources, check out the following documentation:
 - [MSYS2 Documentation](https://www.msys2.org/docs/)
 - [VSCode Documentation](https://code.visualstudio.com/docs/)
 
-Happy coding!
 
