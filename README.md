@@ -11,14 +11,13 @@ This guide will walk you through the process of setting up a development environ
 1. **Clone the Repository:**
    - First, clone this repository to your local machine. Open a terminal (such as Command Prompt or Git Bash) and run the following command:
      ```
-     git clone https://github.com/your-username/your-repository.git
+     git clone https://github.com/takuphilchan/Deep-Learning.git
      ```
-   - Replace `your-username/your-repository` with the actual URL of the repository you want to clone.
    
 2. **Navigate to the Project Folder:**
    - Once the repository is cloned, navigate to the project folder:
      ```
-     cd your-repository
+     cd "Deep Learning"
      ```
 
 ---
