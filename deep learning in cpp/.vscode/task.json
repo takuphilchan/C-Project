@@ -1,0 +1,27 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-std=c++11",                  
+                "-g",                           
+                "main.cpp",                    
+                "-o", "main.exe",              
+                "-I", "C:/msys64/mingw64/include/opencv4", 
+                "-L", "C:/msys64/mingw64/lib",             
+                "-lopencv_core",                           
+                "-lopencv_imgcodecs",                      
+                "-lopencv_highgui",                        
+                "-lopencv_imgproc"                         
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}
