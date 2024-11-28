@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main() {
-    cv::Mat image = cv::imread("D:\\C++ Projects\\lion.png");
+    cv::Mat image = cv::imread("D:\\Deep Learning/deep learning in cpp\\lion.png");
     if (image.empty()) {
         std::cerr << "Could not open or find the image!" << std::endl;
         return -1;

@@ -5,7 +5,7 @@ using namespace std;
 
 int main() {
     // Specify the image path correctly
-    string imagePath = "D:\\C++ Projects\\new_image.jpg";
+    string imagePath = "D:\\Deep Learning/deep learning in cpp\\new_image.jpg";
     
     // Load the image
     cv::Mat image = cv::imread(imagePath);

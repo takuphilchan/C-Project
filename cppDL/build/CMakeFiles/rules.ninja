@@ -6,7 +6,7 @@
 # It is included in the main 'build.ninja'.
 
 # =============================================================================
-# Project: MatrixMultiplication
+# Project: cppDL
 # Configurations: 
 # =============================================================================
 # =============================================================================
@@ -14,7 +14,7 @@
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__matrix_mul_unscanned_
+rule CXX_COMPILER__main_unscanned_
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}C:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -22,11 +22,11 @@ rule CXX_COMPILER__matrix_mul_unscanned_
 
 
 #############################################
-# Rule for linking CXX shared module.
+# Rule for linking CXX executable.
 
-rule CXX_MODULE_LIBRARY_LINKER__matrix_mul_
-  command = C:\Windows\system32\cmd.exe /C "$PRE_LINK && C:\msys64\mingw64\bin\c++.exe $LANGUAGE_COMPILE_FLAGS $ARCH_FLAGS $LINK_FLAGS -shared -o $TARGET_FILE -Wl,--major-image-version,0,--minor-image-version,0 $in $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
-  description = Linking CXX shared module $TARGET_FILE
+rule CXX_EXECUTABLE_LINKER__main_
+  command = C:\Windows\system32\cmd.exe /C "$PRE_LINK && C:\msys64\mingw64\bin\c++.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
 
 
@@ -42,7 +42,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = C:\msys64\mingw64\bin\cmake.exe --regenerate-during-build -S"D:\C++ Projects" -B"D:\C++ Projects\build"
+  command = C:\msys64\mingw64\bin\cmake.exe --regenerate-during-build -S"D:\Deep Learning\cppDL" -B"D:\Deep Learning\cppDL\build"
   description = Re-running CMake...
   generator = 1
 

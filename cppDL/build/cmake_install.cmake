@@ -1,8 +1,8 @@
-# Install script for directory: D:/C++ Projects
+# Install script for directory: D:/Deep Learning/cppDL
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/MatrixMultiplication")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/cppDL")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -52,6 +52,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-  file(WRITE "D:/C++ Projects/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "D:/Deep Learning/cppDL/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

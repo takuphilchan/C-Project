@@ -15,8 +15,8 @@ LDFLAGS = -L"C:/msys64/mingw64/lib" \
           -lopencv_highgui \
           -lopencv_imgproc
 
-TARGET = tests.exe
-SOURCES = tests.cpp
+TARGET = convolutional_filters.exe
+SOURCES = convolutional_filters.cpp
 OBJECTS = $(SOURCES:.cpp=.o)
 
 all: $(TARGET)
