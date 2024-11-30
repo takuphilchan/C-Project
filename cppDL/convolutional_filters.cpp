@@ -17,7 +17,6 @@ Mat applyConvolution(const Mat &image, const Mat &filter) {
             // iterate over the filter matrix
             for (int k = 0; k < filterHeight; k++) {
                 for (int l = 0; l < filterWidth; l++) {
-                    sum += image.at<uchar>(i + k, j + l) * filter.at<double>(k, 1);
                     sum += image.at<uchar>(i + k, j + l) * filter.at<double>(k, l);
                 }
             }
