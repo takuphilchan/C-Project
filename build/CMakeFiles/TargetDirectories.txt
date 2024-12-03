@@ -1,0 +1,3 @@
+D:/Deep Learning/build/CMakeFiles/main.dir
+D:/Deep Learning/build/CMakeFiles/edit_cache.dir
+D:/Deep Learning/build/CMakeFiles/rebuild_cache.dir

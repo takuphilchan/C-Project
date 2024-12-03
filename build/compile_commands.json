@@ -1,0 +1,8 @@
+[
+{
+  "directory": "D:/Deep Learning/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -DWINVER=0x0A00 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0A00 -D_WIN64 @CMakeFiles/main.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\main.dir\\main.cpp.obj -c \"D:\\Deep Learning\\cppDL\\main.cpp\"",
+  "file": "D:/Deep Learning/cppDL/main.cpp",
+  "output": "CMakeFiles/main.dir/main.cpp.obj"
+}
+]

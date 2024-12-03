@@ -4,5 +4,6 @@
         "iostream": "cpp",
         "cmath": "cpp",
         "complex": "cpp"
-    }
+    },
+    "cmake.sourceDirectory": "D:/Deep Learning/cppDL"
 }
